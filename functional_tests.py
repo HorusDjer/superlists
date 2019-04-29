@@ -4,7 +4,7 @@ import unittest
 class NewVisitorTest(unittest.TestCase):
     
     def setUp(self):
-        self.browser = webdriver.FireFox()
+        self.browser = webdriver.Firefox()
 
     def tearDown():
         self.browser.quit()
@@ -41,5 +41,5 @@ class NewVisitorTest(unittest.TestCase):
 
         browser.quit()
 
-
-assert 'to-do' in browser.title
+if __name__ == '__main__':
+    unittest.main(warnings='ignore')
