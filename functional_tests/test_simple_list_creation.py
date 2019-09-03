@@ -17,7 +17,7 @@ class NewVisitorTest(FunctionalTest):
         
 
         # She is invited to enter a to-do item straight away.
-        input = self.get_item_input_box()
+        inputbox = self.get_item_input_box()
         self.assertEqual(
             inputbox.get_attribute('placeholder'),
             'Enter a to-do item'
